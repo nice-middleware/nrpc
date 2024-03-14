@@ -1,5 +1,6 @@
 package com.bluekke.nrpc.demo.provider;
 
+import com.bluekke.nrpc.core.annotation.NProvider;
 import com.bluekke.nrpc.demo.api.User;
 import com.bluekke.nrpc.demo.api.UserService;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
+@NProvider
 public class UserServiceImpl implements UserService {
     @Override
     public User findById(int id) {
